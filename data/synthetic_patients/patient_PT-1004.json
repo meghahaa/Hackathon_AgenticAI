@@ -1,0 +1,103 @@
+{
+  "synthetic": true,
+  "synthetic_notice": "Fabricated record for BC-AAIE-HACK-12. Not a real person.",
+  "patient_id": "PT-1004",
+  "demographics": {
+    "name": "Tomasz Brennan",
+    "dob": "1964-04-19",
+    "mrn": "MRN-40044982",
+    "phone": "+1-555-0110",
+    "address": "301 Cedar Court, Northgate"
+  },
+  "age": 62,
+  "sex": "M",
+  "admission": {
+    "admit_date": "2026-09-18",
+    "discharge_date": "2026-09-20",
+    "admission_type": "elective",
+    "length_of_stay_days": 2,
+    "unit": "Orthopedics"
+  },
+  "discharge_diagnoses": [
+    {
+      "code": "Z96.641",
+      "description": "Status post elective right total hip arthroplasty",
+      "primary": true
+    }
+  ],
+  "comorbidities": [
+    {
+      "name": "Hypertension (no Charlson weight)",
+      "charlson_points": 0
+    },
+    {
+      "name": "Peptic ulcer disease",
+      "charlson_points": 1
+    }
+  ],
+  "discharge_medication_orders": [
+    {
+      "drug": "Apixaban",
+      "dose": "2.5 mg",
+      "route": "PO",
+      "frequency": "twice daily x 35 days",
+      "status": "new",
+      "indication": "VTE prophylaxis"
+    },
+    {
+      "drug": "Oxycodone",
+      "dose": "5 mg",
+      "route": "PO",
+      "frequency": "every 6 hours as needed for severe pain",
+      "status": "new",
+      "indication": "post-op pain"
+    },
+    {
+      "drug": "Acetaminophen",
+      "dose": "1000 mg",
+      "route": "PO",
+      "frequency": "every 8 hours",
+      "status": "new",
+      "indication": "post-op pain"
+    },
+    {
+      "drug": "Pantoprazole",
+      "dose": "40 mg",
+      "route": "PO",
+      "frequency": "once daily",
+      "status": "continue",
+      "indication": "ulcer prophylaxis"
+    },
+    {
+      "drug": "Amlodipine",
+      "dose": "5 mg",
+      "route": "PO",
+      "frequency": "once daily",
+      "status": "continue",
+      "indication": "hypertension"
+    }
+  ],
+  "vitals_at_discharge": {
+    "bp": "128/76",
+    "hr": 76,
+    "spo2": 97,
+    "weight_kg": 90.5,
+    "temp_c": 36.7
+  },
+  "labs": {
+    "hemoglobin_g_dl": 11.4
+  },
+  "utilization": {
+    "ed_visits_6mo": 0,
+    "admissions_12mo": 0
+  },
+  "social": {
+    "lives_alone": false,
+    "caregiver": "spouse",
+    "has_transportation": true,
+    "language": "English"
+  },
+  "functional_status": "Walker, weight-bearing as tolerated; stairs with rail",
+  "nursing_notes": "Cleared by PT for home with walker. Hip precautions reviewed.",
+  "prior_admissions": []
+}

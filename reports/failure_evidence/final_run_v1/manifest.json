@@ -1,0 +1,84 @@
+{
+  "created_at": "2026-09-25T15:35:25+00:00",
+  "generator": "scripts/snapshot_run.py",
+  "transform": "PT-#### / PT#### -> HMAC patient_ref",
+  "files": [
+    {
+      "source": "traces/phoenix_spans.parquet",
+      "snapshot": "reports/failure_evidence/final_run_v1/phoenix_spans.parquet",
+      "sha256_source": "399ebaf72279bbfd7526b1c659ae4352c3839fd9d69e66ca2491ce0455201e6b",
+      "sha256_snapshot": "399ebaf72279bbfd7526b1c659ae4352c3839fd9d69e66ca2491ce0455201e6b",
+      "patient_ids_pseudonymised": 0
+    },
+    {
+      "source": "reports/cli_run_results.json",
+      "snapshot": "reports/failure_evidence/final_run_v1/cli_run_results.json",
+      "sha256_source": "8924d6925a56865d66199721657dd6c9616431b7f7765ef8fbabe9a3cf2486af",
+      "sha256_snapshot": "8924d6925a56865d66199721657dd6c9616431b7f7765ef8fbabe9a3cf2486af",
+      "patient_ids_pseudonymised": 0
+    },
+    {
+      "source": "reports/eval_report.json",
+      "snapshot": "reports/failure_evidence/final_run_v1/eval_report.json",
+      "sha256_source": "628502d113223c9af7fc2f001fd8cb62e7a6b9b2bf9ec64a7ecdf838c3b06458",
+      "sha256_snapshot": "628502d113223c9af7fc2f001fd8cb62e7a6b9b2bf9ec64a7ecdf838c3b06458",
+      "patient_ids_pseudonymised": 0
+    },
+    {
+      "source": "reports/golden_signals.json",
+      "snapshot": "reports/failure_evidence/final_run_v1/golden_signals.json",
+      "sha256_source": "ac10d6e2c074de9ab3d54d0b45e815a3376c3eb9ab6038bb45b06f881cd200ab",
+      "sha256_snapshot": "ac10d6e2c074de9ab3d54d0b45e815a3376c3eb9ab6038bb45b06f881cd200ab",
+      "patient_ids_pseudonymised": 0
+    },
+    {
+      "source": "logs/tool_calls.jsonl",
+      "snapshot": "reports/failure_evidence/final_run_v1/tool_calls.jsonl",
+      "sha256_source": "1e375ada83801a0478d9e3aba0e5c755b65ac16afb88787b7972692e2a14e63d",
+      "sha256_snapshot": "1e375ada83801a0478d9e3aba0e5c755b65ac16afb88787b7972692e2a14e63d",
+      "patient_ids_pseudonymised": 0
+    },
+    {
+      "source": "logs/agent_actions.jsonl",
+      "snapshot": "reports/failure_evidence/final_run_v1/agent_actions.jsonl",
+      "sha256_source": "cd10fa458c7928f50afb217f718f6c7be2cda416f1f3dc5f4e4bd44b74c7b354",
+      "sha256_snapshot": "cd10fa458c7928f50afb217f718f6c7be2cda416f1f3dc5f4e4bd44b74c7b354",
+      "patient_ids_pseudonymised": 0
+    },
+    {
+      "source": "reports/dashboard_data.csv",
+      "snapshot": "reports/failure_evidence/final_run_v1/dashboard_data.csv",
+      "sha256_source": "25b29d9e7e63b79f31c0b2557fdbab608a2f703cfc5f6d3dad3de90d9abdd6ea",
+      "sha256_snapshot": "25b29d9e7e63b79f31c0b2557fdbab608a2f703cfc5f6d3dad3de90d9abdd6ea",
+      "patient_ids_pseudonymised": 0
+    },
+    {
+      "source": "reports/phi_secret_scan.json",
+      "snapshot": "reports/failure_evidence/final_run_v1/phi_secret_scan.json",
+      "sha256_source": "4e3cf2370b74406a4d95c49682334e25b5d7139712312aa412b2d2160bc7d4a4",
+      "sha256_snapshot": "4e3cf2370b74406a4d95c49682334e25b5d7139712312aa412b2d2160bc7d4a4",
+      "patient_ids_pseudonymised": 0
+    },
+    {
+      "source": "reports/pytest_report.txt",
+      "snapshot": "reports/failure_evidence/final_run_v1/pytest_report.txt",
+      "sha256_source": "42cc06596583c857364f3bf9dc927102dfcdda750d4d0a90a6d1e6bb30549fa3",
+      "sha256_snapshot": "c31568a06b05a5e76985e9ce39999f54ceccae9f4e5ceddc83494f74a42ce4ea",
+      "patient_ids_pseudonymised": 0
+    },
+    {
+      "source": "reports/dashboard.png",
+      "snapshot": "reports/failure_evidence/final_run_v1/dashboard.png",
+      "sha256_source": "c47186a09a7ca58fb3d49312057cf226813bcdc0523d8bcef1e8404768b4430f",
+      "sha256_snapshot": "c47186a09a7ca58fb3d49312057cf226813bcdc0523d8bcef1e8404768b4430f",
+      "patient_ids_pseudonymised": 0
+    },
+    {
+      "source": "reports/dashboard_chart.png",
+      "snapshot": "reports/failure_evidence/final_run_v1/dashboard_chart.png",
+      "sha256_source": "b2187db560f864a4cfac58876013e06643d5aaac594be8fe77e0b627adda1f51",
+      "sha256_snapshot": "b2187db560f864a4cfac58876013e06643d5aaac594be8fe77e0b627adda1f51",
+      "patient_ids_pseudonymised": 0
+    }
+  ]
+}

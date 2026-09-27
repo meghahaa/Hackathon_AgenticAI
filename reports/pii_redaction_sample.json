@@ -1,0 +1,142 @@
+{
+  "generated_at": "2026-09-27T18:28:22+00:00",
+  "generator": "scripts/pii_redaction_demo.py",
+  "function": "src.guardrails.guards.mask_phi(use_ner=True)",
+  "ner": "presidio:en_core_web_sm",
+  "note": "before_summary replaces every identifier with <TYPE:n chars>; raw values are never written.",
+  "summary": {
+    "samples": 3,
+    "identifiers": 10,
+    "caught_by_layer": {
+      "registry": 5,
+      "regex": 3,
+      "presidio": 2
+    },
+    "missed": 0
+  },
+  "samples": [
+    {
+      "id": "S1",
+      "expected_layer": "registry",
+      "before_summary": "Discharge summary for <NAME:14 chars> (<MRN:12 chars>), DOB <DOB:10 chars>. Reach the patient on <PHONE:11 chars> at <ADDRESS:20 chars>.",
+      "after": "Discharge summary for [NAME] ([MRN]), DOB [DOB]. Reach the patient on [PHONE] at [ADDRESS].",
+      "identifiers": [
+        {
+          "type": "NAME",
+          "chars": 14,
+          "layer": "registry"
+        },
+        {
+          "type": "MRN",
+          "chars": 12,
+          "layer": "registry"
+        },
+        {
+          "type": "DOB",
+          "chars": 10,
+          "layer": "registry"
+        },
+        {
+          "type": "PHONE",
+          "chars": 11,
+          "layer": "registry"
+        },
+        {
+          "type": "ADDRESS",
+          "chars": 20,
+          "layer": "registry"
+        }
+      ],
+      "mask_phi_hits": [
+        {
+          "layer": "registry",
+          "label": "ADDRESS"
+        },
+        {
+          "layer": "registry",
+          "label": "NAME"
+        },
+        {
+          "layer": "registry",
+          "label": "MRN"
+        },
+        {
+          "layer": "registry",
+          "label": "PHONE"
+        },
+        {
+          "layer": "registry",
+          "label": "DOB"
+        }
+      ],
+      "all_masked": true
+    },
+    {
+      "id": "S2",
+      "expected_layer": "regex",
+      "before_summary": "Caregiver line changed to <PHONE:14 chars>; send the schedule to <EMAIL:26 chars>. SSN on file <SSN:11 chars>.",
+      "after": "Caregiver line changed to [PHONE]; send the schedule to [EMAIL]. SSN on file [SSN].",
+      "identifiers": [
+        {
+          "type": "PHONE",
+          "chars": 14,
+          "layer": "regex"
+        },
+        {
+          "type": "EMAIL",
+          "chars": 26,
+          "layer": "regex"
+        },
+        {
+          "type": "SSN",
+          "chars": 11,
+          "layer": "regex"
+        }
+      ],
+      "mask_phi_hits": [
+        {
+          "layer": "regex",
+          "label": "SSN"
+        },
+        {
+          "layer": "regex",
+          "label": "PHONE"
+        },
+        {
+          "layer": "regex",
+          "label": "EMAIL"
+        }
+      ],
+      "all_masked": true
+    },
+    {
+      "id": "S3",
+      "expected_layer": "presidio",
+      "before_summary": "Her daughter <PERSON:16 chars> will drive her to clinic; they live in <LOCATION:11 chars>.",
+      "after": "Her daughter [PERSON] will drive her to clinic; they live in [LOCATION].",
+      "identifiers": [
+        {
+          "type": "PERSON",
+          "chars": 16,
+          "layer": "presidio"
+        },
+        {
+          "type": "LOCATION",
+          "chars": 11,
+          "layer": "presidio"
+        }
+      ],
+      "mask_phi_hits": [
+        {
+          "layer": "presidio",
+          "label": "LOCATION"
+        },
+        {
+          "layer": "presidio",
+          "label": "PERSON"
+        }
+      ],
+      "all_masked": true
+    }
+  ]
+}

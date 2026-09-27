@@ -1,0 +1,117 @@
+{
+  "synthetic": true,
+  "synthetic_notice": "Fabricated record for BC-AAIE-HACK-12. Not a real person.",
+  "patient_id": "PT-1001",
+  "demographics": {
+    "name": "Meera Sundaram",
+    "dob": "1947-02-11",
+    "mrn": "MRN-40017721",
+    "phone": "+1-555-0142",
+    "address": "12 Elm Row, Fairview"
+  },
+  "age": 78,
+  "sex": "F",
+  "admission": {
+    "admit_date": "2026-09-14",
+    "discharge_date": "2026-09-20",
+    "admission_type": "emergent",
+    "length_of_stay_days": 6,
+    "unit": "Cardiology Step-Down"
+  },
+  "discharge_diagnoses": [
+    {
+      "code": "I50.23",
+      "description": "Acute on chronic systolic (HFrEF) heart failure",
+      "primary": true
+    },
+    {
+      "code": "N18.3",
+      "description": "Chronic kidney disease stage 3",
+      "primary": false
+    }
+  ],
+  "comorbidities": [
+    {
+      "name": "Type 2 diabetes without complications",
+      "charlson_points": 1
+    },
+    {
+      "name": "Chronic kidney disease, moderate",
+      "charlson_points": 2
+    }
+  ],
+  "discharge_medication_orders": [
+    {
+      "drug": "Furosemide",
+      "dose": "40 mg",
+      "route": "PO",
+      "frequency": "twice daily",
+      "status": "changed",
+      "indication": "heart failure - dose increased"
+    },
+    {
+      "drug": "Sacubitril/valsartan",
+      "dose": "24/26 mg",
+      "route": "PO",
+      "frequency": "twice daily",
+      "status": "continue",
+      "indication": "heart failure"
+    },
+    {
+      "drug": "Metoprolol succinate",
+      "dose": "50 mg",
+      "route": "PO",
+      "frequency": "once daily",
+      "status": "continue",
+      "indication": "heart failure"
+    },
+    {
+      "drug": "Spironolactone",
+      "dose": "12.5 mg",
+      "route": "PO",
+      "frequency": "once daily",
+      "status": "new",
+      "indication": "heart failure"
+    },
+    {
+      "drug": "Metformin",
+      "dose": "500 mg",
+      "route": "PO",
+      "frequency": "twice daily",
+      "status": "continue",
+      "indication": "diabetes"
+    }
+  ],
+  "vitals_at_discharge": {
+    "bp": "118/72",
+    "hr": 74,
+    "spo2": 96,
+    "weight_kg": 68.2,
+    "temp_c": 36.8
+  },
+  "labs": {
+    "creatinine_mg_dl": 1.6,
+    "potassium_mmol_l": 4.6,
+    "bnp_pg_ml": 820
+  },
+  "utilization": {
+    "ed_visits_6mo": 2,
+    "admissions_12mo": 1
+  },
+  "social": {
+    "lives_alone": false,
+    "caregiver": "spouse",
+    "has_transportation": true,
+    "language": "English"
+  },
+  "functional_status": "Independent with walker",
+  "nursing_notes": "Daily weights taught; patient demonstrated scale use. Spouse present for teaching. Low-sodium diet education completed.",
+  "prior_admissions": [
+    {
+      "date": "2026-04-02",
+      "reason": "Heart failure exacerbation",
+      "los_days": 5,
+      "readmitted_within_30d": false
+    }
+  ]
+}

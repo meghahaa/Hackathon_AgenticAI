@@ -1,0 +1,216 @@
+{
+  "generated_at": "2026-09-25T14:54:00+00:00",
+  "generator": "scripts/export_traces.py",
+  "span_source": "phoenix.client.Client().spans.get_spans_dataframe",
+  "trace_export": "traces/phoenix_spans.parquet",
+  "window": {
+    "first_span": "2026-09-25 14:37:59.990838+00:00",
+    "last_span": "2026-09-25 14:53:58.381963+00:00"
+  },
+  "traffic": {
+    "spans": 789,
+    "traces": 26,
+    "turns": 26,
+    "llm_calls": 78,
+    "tool_calls": 146,
+    "sessions": 20
+  },
+  "latency": {
+    "thinking": {
+      "count": 78,
+      "p50_ms": 5730.0,
+      "p95_ms": 6233.3,
+      "max_ms": 7556.6
+    },
+    "acting": {
+      "count": 169,
+      "p50_ms": 139.2,
+      "p95_ms": 6447.3,
+      "max_ms": 11796.7
+    },
+    "tool": {
+      "count": 146,
+      "p50_ms": 13.8,
+      "p95_ms": 21.6,
+      "max_ms": 27.7
+    },
+    "end_to_end": {
+      "count": 26,
+      "p50_ms": 18825.2,
+      "p95_ms": 31012.8,
+      "max_ms": 34148.5
+    },
+    "by_node": [
+      {
+        "name": "clarify",
+        "count": 2,
+        "p50_ms": 0.0,
+        "p95_ms": 0.0
+      },
+      {
+        "name": "escalate",
+        "count": 3,
+        "p50_ms": 0.0,
+        "p95_ms": 0.0
+      },
+      {
+        "name": "find_followup_slots",
+        "count": 33,
+        "p50_ms": 15.8,
+        "p95_ms": 20.7
+      },
+      {
+        "name": "get_patient_record",
+        "count": 18,
+        "p50_ms": 15.8,
+        "p95_ms": 24.3
+      },
+      {
+        "name": "get_prior_admissions",
+        "count": 30,
+        "p50_ms": 14.7,
+        "p95_ms": 20.1
+      },
+      {
+        "name": "human_approval_gate",
+        "count": 15,
+        "p50_ms": 12.5,
+        "p95_ms": 21.7
+      },
+      {
+        "name": "input_guard",
+        "count": 26,
+        "p50_ms": 121.8,
+        "p95_ms": 154.7
+      },
+      {
+        "name": "output_guard",
+        "count": 26,
+        "p50_ms": 5664.9,
+        "p95_ms": 6518.6
+      },
+      {
+        "name": "plan_assembly_agent",
+        "count": 11,
+        "p50_ms": 6268.6,
+        "p95_ms": 6571.2
+      },
+      {
+        "name": "policy_retrieval_agent",
+        "count": 13,
+        "p50_ms": 6112.3,
+        "p95_ms": 11735.6
+      },
+      {
+        "name": "readmission_risk_agent",
+        "count": 13,
+        "p50_ms": 6188.8,
+        "p95_ms": 6420.4
+      },
+      {
+        "name": "search_followup_policy",
+        "count": 65,
+        "p50_ms": 11.8,
+        "p95_ms": 21.0
+      },
+      {
+        "name": "supervisor",
+        "count": 60,
+        "p50_ms": 40.1,
+        "p95_ms": 5928.7
+      }
+    ]
+  },
+  "tokens": {
+    "input": 58494,
+    "output": 7298,
+    "total": 65792,
+    "mean_input_per_llm_call": 749.9,
+    "models": [
+      "gemini-3.5-flash-lite"
+    ]
+  },
+  "cost": {
+    "pricing_usd_per_mtok": {
+      "gemini-3.5-flash-lite": {
+        "input": 0.1,
+        "output": 0.4
+      },
+      "gemini-3.6-flash": {
+        "input": 0.5,
+        "output": 3.0
+      },
+      "gemini-2.5-flash": {
+        "input": 0.3,
+        "output": 2.5
+      },
+      "gemini-2.5-flash-lite": {
+        "input": 0.1,
+        "output": 0.4
+      },
+      "gemini-2.5-pro": {
+        "input": 1.25,
+        "output": 10.0
+      },
+      "gemini-2.0-flash": {
+        "input": 0.1,
+        "output": 0.4
+      },
+      "offline-stub": {
+        "input": 0.0,
+        "output": 0.0
+      }
+    },
+    "pricing_source": "assumed list prices - override with GEMINI_PRICE_* / GEMINI_FALLBACK_PRICE_* env vars to match your tier (flash-lite 0.10/0.40, flash 0.50/3.00 USD per 1M tokens)",
+    "total_usd": 0.008769,
+    "mean_usd_per_turn": 0.000337,
+    "max_llm_calls_per_turn": 5,
+    "formula": "sum(prompt_tokens*input_price + completion_tokens*output_price)/1e6 over LLM spans"
+  },
+  "errors": {
+    "span_errors": 0,
+    "span_error_rate": 0.0,
+    "tool_calls_logged": 146,
+    "tool_non_ok": 1,
+    "tool_error_rate": 0.0068,
+    "tool_status_counts": {
+      "ok": 145,
+      "error": 1
+    }
+  },
+  "quality": {
+    "source": "reports/eval_report.json",
+    "accuracy": 1.0,
+    "hallucination_rate": 0.0,
+    "mean_faithfulness": 0.9881,
+    "mean_answer_relevancy": 0.8537
+  },
+  "budgets": {
+    "p95_end_to_end_latency_ms": {
+      "budget": 90000,
+      "actual": 31012.8,
+      "within_budget": true
+    },
+    "mean_cost_usd_per_turn": {
+      "budget": 0.01,
+      "actual": 0.000337,
+      "within_budget": true
+    },
+    "max_llm_calls_per_turn": {
+      "budget": 8,
+      "actual": 5,
+      "within_budget": true
+    },
+    "tool_error_rate": {
+      "budget": 0.25,
+      "actual": 0.0068,
+      "within_budget": true
+    }
+  },
+  "dashboard": {
+    "png": "reports/dashboard.png",
+    "kind": "phoenix-ui-screenshot (headless browser)",
+    "chart": "reports/dashboard_chart.png",
+    "data": "reports/dashboard_data.csv"
+  }
+}

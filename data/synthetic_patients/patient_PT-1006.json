@@ -1,0 +1,101 @@
+{
+  "synthetic": true,
+  "synthetic_notice": "Fabricated record for BC-AAIE-HACK-12. Not a real person.",
+  "patient_id": "PT-1006",
+  "demographics": {
+    "name": "Hassan Whitfield",
+    "dob": "1968-01-25",
+    "mrn": "MRN-40061177",
+    "phone": "+1-555-0128",
+    "address": "9 Beacon Hill Road, Riverton"
+  },
+  "age": 58,
+  "sex": "M",
+  "admission": {
+    "admit_date": "2026-09-16",
+    "discharge_date": "2026-09-20",
+    "admission_type": "emergent",
+    "length_of_stay_days": 4,
+    "unit": "Cardiology"
+  },
+  "discharge_diagnoses": [
+    {
+      "code": "I21.4",
+      "description": "NSTEMI, status post PCI with drug-eluting stent",
+      "primary": true
+    }
+  ],
+  "comorbidities": [
+    {
+      "name": "Myocardial infarction",
+      "charlson_points": 1
+    }
+  ],
+  "discharge_medication_orders": [
+    {
+      "drug": "Aspirin",
+      "dose": "81 mg",
+      "route": "PO",
+      "frequency": "once daily",
+      "status": "new",
+      "indication": "DAPT"
+    },
+    {
+      "drug": "Ticagrelor",
+      "dose": "90 mg",
+      "route": "PO",
+      "frequency": "twice daily",
+      "status": "new",
+      "indication": "DAPT - do not stop without cardiology"
+    },
+    {
+      "drug": "Atorvastatin",
+      "dose": "80 mg",
+      "route": "PO",
+      "frequency": "once daily",
+      "status": "new",
+      "indication": "secondary prevention"
+    },
+    {
+      "drug": "Metoprolol tartrate",
+      "dose": "25 mg",
+      "route": "PO",
+      "frequency": "twice daily",
+      "status": "new",
+      "indication": "post-MI"
+    },
+    {
+      "drug": "Nitroglycerin",
+      "dose": "0.4 mg",
+      "route": "SL",
+      "frequency": "every 5 min as needed for chest pain, max 3",
+      "status": "new",
+      "indication": "angina"
+    }
+  ],
+  "vitals_at_discharge": {
+    "bp": "122/74",
+    "hr": 66,
+    "spo2": 98,
+    "weight_kg": 84.3,
+    "temp_c": 36.7
+  },
+  "labs": {
+    "troponin_trend": "down-trending",
+    "ldl_mg_dl": 142,
+    "lvef_pct": 50
+  },
+  "utilization": {
+    "ed_visits_6mo": 0,
+    "admissions_12mo": 0
+  },
+  "social": {
+    "lives_alone": false,
+    "caregiver": "spouse",
+    "has_transportation": true,
+    "language": "English"
+  },
+  "functional_status": "Independent",
+  "nursing_notes": "Cardiac rehab brochure given. Stent card provided.",
+  "prior_admissions": []
+}

@@ -1,0 +1,12 @@
+2026-09-27T18:31:27+00:00 TEST test_cross_session_memory_persistence (model=offline-stub, deterministic)
+2026-09-27T18:31:27+00:00 stores: checkpointer=checkpoints.sqlite (AsyncSqliteSaver)  long_term=ltm.sqlite (SQLite+embeddings)
+2026-09-27T18:31:29+00:00 A.t1 intent=full_discharge_plan risk=HIGH status=PENDING_CLINICIAN_APPROVAL
+2026-09-27T18:31:30+00:00 A.t2 session_facts={'preferred_weekday': 'Tuesday', 'transport_by': 'daughter'}
+2026-09-27T18:31:31+00:00 A.t3 uses earlier-turn facts: 3/4 appointments on Tuesday; logistics=['Home health nursing referral: lives alone without caregiver [home_care_policy.md#home-health-referral-eligibility]', 'Confirm home-oxygen delivery before discharge; oxygen re-assessment in 30-60 days [home_care_policy.md#durable-medical-equipment]', 'Transport to appointments by daughter (available Tuesdays) [home_care_policy.md#caregiver-involvement]']
+2026-09-27T18:31:31+00:00 A thread holds 6 messages after 3 turns
+2026-09-27T18:31:31+00:00 teardown: checkpointer connection closed, graph and runtime discarded
+2026-09-27T18:31:31+00:00 re-opened checkpointer: thread session-A messages=6 facts={'preferred_weekday': 'Tuesday', 'transport_by': 'daughter'}
+2026-09-27T18:31:31+00:00 long-term store holds 4 memories for patient/pref_1172896b29
+2026-09-27T18:31:31+00:00 B.t1 intent=recall_prior recalled=4 items
+2026-09-27T18:31:31+00:00 B.t1 response: From prior sessions for this patient: | - Plan status: PENDING_CLINICIAN_APPROVAL. Approval reasons: high_readmission_risk, partial_degradation_requires_review. | - Care logistics stated by clinician: {"preferred_weekday": "Tuesday", "transport_by": "daughter"}. | - Proposed follow-ups: heart_failure_clinic Tuesday 2026-09-22 10:00; primary_care Tuesday 2026-09-22 11:00; pulmonology Thursday 2026-09-24 15:00; pulmonary_rehab Tuesday 2026-09-29 14:00. | - Readmission risk assessed as HIGH (LACE 13); factors: Prolonged length of stay, Emergent admission, Comorbidity burden, Recent ED utilisation
+2026-09-27T18:31:31+00:00 RESULT PASS: short-term facts reused within session; thread state survived store re-open; prior-session context recalled from long-term memory in a new thread

@@ -1,0 +1,382 @@
+{
+  "generated_at": "2026-09-27T18:26:38+00:00",
+  "generator": "scripts/export_traces.py",
+  "span_source": "phoenix.client.Client().spans.get_spans_dataframe",
+  "phoenix_project": "discharge-copilot",
+  "trace_export": "traces/phoenix_spans.parquet",
+  "window": {
+    "first_span": "2026-09-27 17:14:40.042809+00:00",
+    "last_span": "2026-09-27 18:25:22.476513+00:00"
+  },
+  "traffic": {
+    "spans": 2195,
+    "traces": 72,
+    "turns": 72,
+    "llm_calls": 235,
+    "tool_calls": 367,
+    "sessions": 62
+  },
+  "latency": {
+    "thinking": {
+      "count": 235,
+      "p50_ms": 1725.7,
+      "p95_ms": 11349.1,
+      "max_ms": 12004.8
+    },
+    "rate_limit_wait": {
+      "count": 235,
+      "p50_ms": 2311.5,
+      "p95_ms": 4522.1,
+      "max_ms": 6032.0
+    },
+    "thinking_including_rate_limit": {
+      "count": 235,
+      "p50_ms": 4880.1,
+      "p95_ms": 13444.2,
+      "max_ms": 16433.4
+    },
+    "acting": {
+      "count": 424,
+      "p50_ms": 1978.2,
+      "p95_ms": 16235.4,
+      "max_ms": 41015.2
+    },
+    "tool": {
+      "count": 367,
+      "p50_ms": 21.1,
+      "p95_ms": 57.7,
+      "max_ms": 188.6
+    },
+    "end_to_end": {
+      "count": 72,
+      "p50_ms": 24156.2,
+      "p95_ms": 63006.2,
+      "max_ms": 126954.2
+    },
+    "by_node": [
+      {
+        "name": "clarify",
+        "count": 2,
+        "p50_ms": 4.3,
+        "p95_ms": 4.4
+      },
+      {
+        "name": "escalate",
+        "count": 6,
+        "p50_ms": 4.4,
+        "p95_ms": 4.9
+      },
+      {
+        "name": "find_followup_slots",
+        "count": 81,
+        "p50_ms": 18.7,
+        "p95_ms": 21.7
+      },
+      {
+        "name": "get_patient_record",
+        "count": 46,
+        "p50_ms": 20.3,
+        "p95_ms": 25.0
+      },
+      {
+        "name": "get_prior_admissions",
+        "count": 75,
+        "p50_ms": 18.2,
+        "p95_ms": 20.6
+      },
+      {
+        "name": "human_approval_gate",
+        "count": 37,
+        "p50_ms": 4.9,
+        "p95_ms": 6.3
+      },
+      {
+        "name": "input_guard",
+        "count": 72,
+        "p50_ms": 2195.4,
+        "p95_ms": 2992.0
+      },
+      {
+        "name": "output_guard",
+        "count": 72,
+        "p50_ms": 5849.3,
+        "p95_ms": 15298.7
+      },
+      {
+        "name": "plan_assembly_agent",
+        "count": 26,
+        "p50_ms": 6134.5,
+        "p95_ms": 28756.7
+      },
+      {
+        "name": "policy_retrieval_agent",
+        "count": 34,
+        "p50_ms": 6379.9,
+        "p95_ms": 20216.7
+      },
+      {
+        "name": "readmission_risk_agent",
+        "count": 30,
+        "p50_ms": 5942.9,
+        "p95_ms": 26267.7
+      },
+      {
+        "name": "search_followup_policy",
+        "count": 165,
+        "p50_ms": 52.0,
+        "p95_ms": 65.1
+      },
+      {
+        "name": "supervisor",
+        "count": 145,
+        "p50_ms": 109.3,
+        "p95_ms": 10376.4
+      }
+    ]
+  },
+  "latency_definitions": {
+    "thinking": "model-only time: duration of LLM spans (openinference span kind LLM). Since the rate-limiter split, the client-side GEMINI_RPM wait is no longer inside these spans.",
+    "rate_limit_wait": "time spent waiting for the client-side InMemoryRateLimiter (GEMINI_RPM) before a model request: duration of the 'rate_limit_wait' spans emitted by src/llm.ainvoke_with_retry.",
+    "thinking_including_rate_limit": "for comparison with runs before the split: each LLM span's duration plus the rate_limit_wait span that immediately preceded it in the same trace.",
+    "acting": "duration of LangGraph node spans (agents, guards, approval gate).",
+    "tool": "duration of TOOL spans (MCP / RAG tool calls).",
+    "end_to_end": "duration of the copilot_turn root span (one user turn).",
+    "scope": "all categories, trace/turn counts, tokens, cost and errors cover agent spans only (Phoenix project PHOENIX_PROJECT_NAME). DeepEval judge spans are sent to the separate PHOENIX_PROJECT_NAME-eval project and reported in the eval_judge block; any span tagged copilot.component=eval_judge that still reaches the agent project is excluded the same way."
+  },
+  "tokens": {
+    "input": 143925,
+    "output": 20735,
+    "total": 164660,
+    "mean_input_per_llm_call": 612.4,
+    "models": [
+      "gemini-3.5-flash-lite",
+      "gemini-3.6-flash",
+      "openai/gpt-oss-120b"
+    ]
+  },
+  "cost": {
+    "pricing_usd_per_mtok": {
+      "gemini-3.5-flash-lite": {
+        "input": 0.3,
+        "output": 2.5
+      },
+      "gemini-3.6-flash": {
+        "input": 0.75,
+        "output": 3.75
+      },
+      "gemini-3.1-flash-lite": {
+        "input": 0.25,
+        "output": 1.5
+      },
+      "gemini-2.5-flash": {
+        "input": 0.3,
+        "output": 2.5
+      },
+      "gemini-3.8-flash": {
+        "input": 0.75,
+        "output": 3.75
+      },
+      "openai/gpt-oss-120b": {
+        "input": 0.15,
+        "output": 0.6
+      },
+      "openai/gpt-oss-20b": {
+        "input": 0.075,
+        "output": 0.3
+      },
+      "gemini-2.5-flash-lite": {
+        "input": 0.1,
+        "output": 0.4
+      },
+      "gemini-2.5-pro": {
+        "input": 1.25,
+        "output": 10.0
+      },
+      "gemini-2.0-flash": {
+        "input": 0.1,
+        "output": 0.4
+      },
+      "offline-stub": {
+        "input": 0.0,
+        "output": 0.0
+      }
+    },
+    "pricing_source": "Official Gemini API pricing page (ai.google.dev/gemini-api/docs/pricing), Standard paid tier, checked 2026-09-26; free-tier usage is billed $0, so this is the production-cost estimate.",
+    "total_usd": 0.092184,
+    "mean_usd_per_turn": 0.00128,
+    "max_llm_calls_per_turn": 13,
+    "formula": "sum(prompt_tokens*input_price + completion_tokens*output_price)/1e6 over LLM spans"
+  },
+  "errors": {
+    "span_errors": 57,
+    "span_error_rate": 0.026,
+    "tool_calls_logged": 367,
+    "tool_non_ok": 1,
+    "tool_error_rate": 0.0027,
+    "tool_status_counts": {
+      "ok": 366,
+      "error": 1
+    }
+  },
+  "eval_judge": {
+    "component": "eval_judge",
+    "phoenix_project": "discharge-copilot-eval",
+    "span_source": "phoenix.client.Client().spans.get_spans_dataframe",
+    "note": "DeepEval judge traffic (scripts/run_eval.py), excluded from the agent's latency, trace/turn counts, tokens, cost and errors above. Judge requests use google-genai directly and are not traced as LLM spans; judge token usage is in reports/eval_report.json judge.usage.",
+    "spans": 244,
+    "traces": 244,
+    "rate_limit_wait": {
+      "count": 244,
+      "p50_ms": 2809.0,
+      "p95_ms": 4712.4,
+      "max_ms": 6015.8,
+      "total_s": 591.0
+    },
+    "span_errors": 0,
+    "cost_usd_from_spans": 0.0,
+    "trace_export": "traces/phoenix_eval_spans.parquet"
+  },
+  "providers": {
+    "headline_scope": "gemini_only",
+    "note": "Groq is a last-resort quota fallback (QUOTA_FALLBACK_PROVIDER=groq, off by default; a deviation from the brief's Gemini-only rule). Headline metrics are Gemini-only; turns with any Groq request are reported apart.",
+    "llm_calls_by_provider": {
+      "gemini": 231,
+      "groq": 4
+    },
+    "groq_calls_by_agent_node": {
+      "plan_narrative": 2,
+      "policy_query_planner": 1,
+      "risk_rationale": 1
+    },
+    "groq_calls_by_step": {
+      "demo_sessions": 0,
+      "red_team": 0,
+      "eval_agent_turns": 4,
+      "eval_judge": 0
+    },
+    "gemini_only": {
+      "turns": 69,
+      "llm_calls": 204,
+      "thinking_p50_ms": 1654.0,
+      "thinking_p95_ms": 10891.1,
+      "end_to_end_p50_ms": 17620.4,
+      "end_to_end_p95_ms": 53966.4,
+      "mean_cost_usd_per_turn": 0.001213
+    },
+    "groq_involved": {
+      "turns": 3,
+      "llm_calls": 31,
+      "thinking_p50_ms": 9905.7,
+      "thinking_p95_ms": 11914.6,
+      "end_to_end_p50_ms": 77221.8,
+      "end_to_end_p95_ms": 121981.0,
+      "mean_cost_usd_per_turn": 0.002826
+    }
+  },
+  "quality": {
+    "source": "reports/eval_report.json",
+    "accuracy": 0.9688,
+    "hallucination_rate_answers": 0.0,
+    "hallucination_rate_overall": 0.0312,
+    "hallucination_rate_non_answers": 0.1429,
+    "hallucination_rate_note": "headline is hallucination_rate_answers; non-answers (REFUSED, ESCALATED_TO_HUMAN, NEEDS_CLARIFICATION) can score 0.0 on the context-agreement metric without inventing anything (the judge counts not engaging with the record context as disagreement), so they are included only in hallucination_rate_overall",
+    "judged_coverage": 1.0,
+    "mean_faithfulness": 0.9719,
+    "mean_answer_relevancy": 0.9,
+    "headline_scope": "gemini_only",
+    "by_provider": {
+      "gemini_only": {
+        "cases": 30,
+        "case_ids": [
+          "G01",
+          "G02",
+          "G03",
+          "G04",
+          "G05",
+          "G06",
+          "G07",
+          "G08",
+          "G09",
+          "G10",
+          "G11",
+          "G12",
+          "G13",
+          "G14",
+          "G15",
+          "G16",
+          "G17",
+          "G18",
+          "G20",
+          "G22",
+          "G23",
+          "G24",
+          "G25",
+          "G26",
+          "G27",
+          "G28",
+          "G29",
+          "G30",
+          "G31",
+          "G32"
+        ],
+        "accuracy": 0.9667,
+        "judged_coverage": 1.0,
+        "hallucination_rate_answers": 0.0,
+        "hallucination_rate": 0.0333,
+        "mean_faithfulness": 0.97,
+        "mean_answer_relevancy": 0.9136
+      },
+      "groq_involved": {
+        "cases": 2,
+        "case_ids": [
+          "G19",
+          "G21"
+        ],
+        "accuracy": 1.0,
+        "judged_coverage": 1.0,
+        "hallucination_rate_answers": 0.0,
+        "hallucination_rate": 0.0,
+        "mean_faithfulness": 1.0,
+        "mean_answer_relevancy": 0.7438
+      }
+    },
+    "groq_calls_by_step": {
+      "agent_turns": 4,
+      "judge": 0
+    }
+  },
+  "budgets": {
+    "p95_end_to_end_latency_ms": {
+      "budget": 90000,
+      "actual": 63006.2,
+      "within_budget": true
+    },
+    "mean_cost_usd_per_turn": {
+      "budget": 0.01,
+      "actual": 0.00128,
+      "within_budget": true
+    },
+    "max_llm_calls_per_turn": {
+      "budget": 8,
+      "actual": 13,
+      "within_budget": false
+    },
+    "tool_error_rate": {
+      "budget": 0.25,
+      "actual": 0.0027,
+      "within_budget": true
+    }
+  },
+  "dashboard": {
+    "png": "reports/dashboard.png",
+    "kind": "phoenix-ui-screenshot (headless browser): project Metrics view",
+    "phoenix_project": "discharge-copilot",
+    "time_range": {
+      "first_span": "2026-09-27 17:14:40.042809+00:00",
+      "last_span": "2026-09-27 18:25:22.476513+00:00"
+    },
+    "spans_png": "reports/dashboard_spans.png",
+    "chart": "reports/dashboard_chart.png",
+    "data": "reports/dashboard_data.csv"
+  }
+}

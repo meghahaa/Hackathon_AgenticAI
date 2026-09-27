@@ -1,0 +1,26 @@
+# Demonstrated local run of the optional FastAPI streaming endpoint (src/api/app.py)
+# server: uvicorn src.api.app:app --port 8000   (COPILOT_LOG_DIR=state/api_logs keeps this ad-hoc run out of the evidence logs)
+# 2026-09-25T14:59:46Z  GET /healthz -> {"ok":true}
+# curl -N -X POST localhost:8000/v1/discharge/stream -H "content-type: application/json" -d {"session_id":"api-demo-1","patient_id":"<synthetic id>","message":"What is the readmission risk for this patient?"}
+
+event: node
+data: {"node": "input_guard", "intent": null, "status": "IN_PROGRESS", "requires_clinician_approval": false}
+
+event: node
+data: {"node": "supervisor", "intent": "risk_assessment", "next_node": "readmission_risk_agent"}
+
+event: node
+data: {"node": "readmission_risk_agent", "risk_level": "LOW"}
+
+event: node
+data: {"node": "supervisor", "next_node": "human_approval_gate"}
+
+event: node
+data: {"node": "human_approval_gate", "status": "DRAFT_READY_FOR_CLINICIAN_SIGNOFF", "requires_clinician_approval": false}
+
+event: node
+data: {"node": "output_guard"}
+
+event: final
+data: {"run_id": "run-c42ec51a5bb4", "answer": "READMISSION RISK: LOW (LACE 3; L=2 A=0 C=1 E=0) [readmission_risk_protocols.md#risk-tiers]\nFactors behind the flag:\n  - LACE 3 (LOW): L=2 A=0 C=1 E=0 (source: readmission_risk_protocols.md#lace-index-scoring)\n  - Comorbidity burden: Charlson points=1 (source: comorbidities)\n  - Polypharmacy: 5 discharge medications (source: readmission_risk_protocols.md#additional-contributing-factors)\n  - High-risk medication: Apixaban, Oxycodone (source: readmission_risk_protocols.md#additional-contributing-factors)\nRationale: The patient is at LOW readmission risk (LACE 3, score: L=2, A=0, C=1, E=0). Contributing factors include a comorbidity burden with a Charlson score of 1, polypharmacy involving 5 discharge medications, and the use of high-risk medications, specifically Apixaban and Oxycodone.\nStatus: DRAFT_READY_FOR_CLINICIAN_SIGNOFF", "status": "DRAFT_READY_FOR_CLINICIAN_SIGNOFF"}
+

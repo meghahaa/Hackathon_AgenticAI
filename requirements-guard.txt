@@ -1,0 +1,5 @@
+# Install with:  pip install --no-deps -r requirements-guard.txt   (after requirements.txt)
+# --no-deps because llm-guard pins transformers==4.51.3, which would break sentence-transformers>=5.
+# Its PromptInjection scanner is verified to work on the transformers 5.x in requirements.txt (tests/test_guardrails.py
+# fakes it; the live model is protectai/deberta-v3-base-prompt-injection-v2, ~750 MB, downloaded on first use).
+llm-guard==0.3.16

@@ -1,0 +1,1096 @@
+{
+  "primary_care": [
+    {
+      "date": "2026-09-22",
+      "weekday": "Tuesday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-09-24",
+      "weekday": "Thursday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-09-28",
+      "weekday": "Monday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-09-29",
+      "weekday": "Tuesday",
+      "time": "09:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-09-30",
+      "weekday": "Wednesday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-01",
+      "weekday": "Thursday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-07",
+      "weekday": "Wednesday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-08",
+      "weekday": "Thursday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-09",
+      "weekday": "Friday",
+      "time": "09:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-12",
+      "weekday": "Monday",
+      "time": "09:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-13",
+      "weekday": "Tuesday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-14",
+      "weekday": "Wednesday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-16",
+      "weekday": "Friday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-19",
+      "weekday": "Monday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-20",
+      "weekday": "Tuesday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-21",
+      "weekday": "Wednesday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-28",
+      "weekday": "Wednesday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-29",
+      "weekday": "Thursday",
+      "time": "10:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-30",
+      "weekday": "Friday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-11-03",
+      "weekday": "Tuesday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-11-04",
+      "weekday": "Wednesday",
+      "time": "11:00",
+      "telehealth_available": true
+    }
+  ],
+  "cardiology": [
+    {
+      "date": "2026-09-24",
+      "weekday": "Thursday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-09-28",
+      "weekday": "Monday",
+      "time": "09:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-09-30",
+      "weekday": "Wednesday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-02",
+      "weekday": "Friday",
+      "time": "10:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-05",
+      "weekday": "Monday",
+      "time": "09:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-07",
+      "weekday": "Wednesday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-08",
+      "weekday": "Thursday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-12",
+      "weekday": "Monday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-13",
+      "weekday": "Tuesday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-14",
+      "weekday": "Wednesday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-23",
+      "weekday": "Friday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-26",
+      "weekday": "Monday",
+      "time": "09:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-28",
+      "weekday": "Wednesday",
+      "time": "10:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-29",
+      "weekday": "Thursday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-30",
+      "weekday": "Friday",
+      "time": "09:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-11-02",
+      "weekday": "Monday",
+      "time": "15:00",
+      "telehealth_available": true
+    }
+  ],
+  "heart_failure_clinic": [
+    {
+      "date": "2026-09-22",
+      "weekday": "Tuesday",
+      "time": "10:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-09-23",
+      "weekday": "Wednesday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-09-24",
+      "weekday": "Thursday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-09-29",
+      "weekday": "Tuesday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-01",
+      "weekday": "Thursday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-02",
+      "weekday": "Friday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-06",
+      "weekday": "Tuesday",
+      "time": "10:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-07",
+      "weekday": "Wednesday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-08",
+      "weekday": "Thursday",
+      "time": "09:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-12",
+      "weekday": "Monday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-15",
+      "weekday": "Thursday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-16",
+      "weekday": "Friday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-19",
+      "weekday": "Monday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-21",
+      "weekday": "Wednesday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-22",
+      "weekday": "Thursday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-26",
+      "weekday": "Monday",
+      "time": "09:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-27",
+      "weekday": "Tuesday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-29",
+      "weekday": "Thursday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-30",
+      "weekday": "Friday",
+      "time": "15:00",
+      "telehealth_available": true
+    }
+  ],
+  "pulmonology": [
+    {
+      "date": "2026-09-24",
+      "weekday": "Thursday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-09-29",
+      "weekday": "Tuesday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-09-30",
+      "weekday": "Wednesday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-02",
+      "weekday": "Friday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-06",
+      "weekday": "Tuesday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-07",
+      "weekday": "Wednesday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-08",
+      "weekday": "Thursday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-09",
+      "weekday": "Friday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-12",
+      "weekday": "Monday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-13",
+      "weekday": "Tuesday",
+      "time": "09:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-14",
+      "weekday": "Wednesday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-15",
+      "weekday": "Thursday",
+      "time": "10:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-16",
+      "weekday": "Friday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-21",
+      "weekday": "Wednesday",
+      "time": "09:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-22",
+      "weekday": "Thursday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-26",
+      "weekday": "Monday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-28",
+      "weekday": "Wednesday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-30",
+      "weekday": "Friday",
+      "time": "09:00",
+      "telehealth_available": true
+    }
+  ],
+  "endocrinology": [
+    {
+      "date": "2026-09-22",
+      "weekday": "Tuesday",
+      "time": "10:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-09-24",
+      "weekday": "Thursday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-09-25",
+      "weekday": "Friday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-09-28",
+      "weekday": "Monday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-09-30",
+      "weekday": "Wednesday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-01",
+      "weekday": "Thursday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-02",
+      "weekday": "Friday",
+      "time": "10:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-07",
+      "weekday": "Wednesday",
+      "time": "10:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-08",
+      "weekday": "Thursday",
+      "time": "09:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-12",
+      "weekday": "Monday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-14",
+      "weekday": "Wednesday",
+      "time": "09:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-15",
+      "weekday": "Thursday",
+      "time": "09:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-16",
+      "weekday": "Friday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-23",
+      "weekday": "Friday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-26",
+      "weekday": "Monday",
+      "time": "10:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-29",
+      "weekday": "Thursday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-30",
+      "weekday": "Friday",
+      "time": "10:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-11-02",
+      "weekday": "Monday",
+      "time": "10:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-11-03",
+      "weekday": "Tuesday",
+      "time": "11:00",
+      "telehealth_available": true
+    }
+  ],
+  "diabetes_educator": [
+    {
+      "date": "2026-09-21",
+      "weekday": "Monday",
+      "time": "09:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-09-22",
+      "weekday": "Tuesday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-09-24",
+      "weekday": "Thursday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-09-25",
+      "weekday": "Friday",
+      "time": "10:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-09-29",
+      "weekday": "Tuesday",
+      "time": "10:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-02",
+      "weekday": "Friday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-07",
+      "weekday": "Wednesday",
+      "time": "09:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-09",
+      "weekday": "Friday",
+      "time": "09:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-12",
+      "weekday": "Monday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-13",
+      "weekday": "Tuesday",
+      "time": "10:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-15",
+      "weekday": "Thursday",
+      "time": "10:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-19",
+      "weekday": "Monday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-21",
+      "weekday": "Wednesday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-29",
+      "weekday": "Thursday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-11-03",
+      "weekday": "Tuesday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-11-04",
+      "weekday": "Wednesday",
+      "time": "09:00",
+      "telehealth_available": true
+    }
+  ],
+  "orthopedics": [
+    {
+      "date": "2026-09-28",
+      "weekday": "Monday",
+      "time": "11:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-09-29",
+      "weekday": "Tuesday",
+      "time": "10:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-09-30",
+      "weekday": "Wednesday",
+      "time": "15:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-10-01",
+      "weekday": "Thursday",
+      "time": "14:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-10-12",
+      "weekday": "Monday",
+      "time": "14:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-10-14",
+      "weekday": "Wednesday",
+      "time": "11:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-10-15",
+      "weekday": "Thursday",
+      "time": "14:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-10-19",
+      "weekday": "Monday",
+      "time": "15:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-10-20",
+      "weekday": "Tuesday",
+      "time": "14:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-10-26",
+      "weekday": "Monday",
+      "time": "15:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-11-02",
+      "weekday": "Monday",
+      "time": "11:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-11-03",
+      "weekday": "Tuesday",
+      "time": "15:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-11-04",
+      "weekday": "Wednesday",
+      "time": "14:00",
+      "telehealth_available": false
+    }
+  ],
+  "wound_check": [
+    {
+      "date": "2026-09-22",
+      "weekday": "Tuesday",
+      "time": "14:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-09-23",
+      "weekday": "Wednesday",
+      "time": "09:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-09-24",
+      "weekday": "Thursday",
+      "time": "11:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-09-28",
+      "weekday": "Monday",
+      "time": "14:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-09-29",
+      "weekday": "Tuesday",
+      "time": "10:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-10-01",
+      "weekday": "Thursday",
+      "time": "10:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-10-02",
+      "weekday": "Friday",
+      "time": "15:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-10-05",
+      "weekday": "Monday",
+      "time": "15:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-10-08",
+      "weekday": "Thursday",
+      "time": "09:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-10-12",
+      "weekday": "Monday",
+      "time": "11:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-10-14",
+      "weekday": "Wednesday",
+      "time": "14:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-10-16",
+      "weekday": "Friday",
+      "time": "10:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-10-19",
+      "weekday": "Monday",
+      "time": "14:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-10-20",
+      "weekday": "Tuesday",
+      "time": "15:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-10-22",
+      "weekday": "Thursday",
+      "time": "15:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-10-23",
+      "weekday": "Friday",
+      "time": "11:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-10-27",
+      "weekday": "Tuesday",
+      "time": "09:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-10-28",
+      "weekday": "Wednesday",
+      "time": "09:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-10-29",
+      "weekday": "Thursday",
+      "time": "15:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-10-30",
+      "weekday": "Friday",
+      "time": "14:00",
+      "telehealth_available": false
+    },
+    {
+      "date": "2026-11-02",
+      "weekday": "Monday",
+      "time": "15:00",
+      "telehealth_available": false
+    }
+  ],
+  "cardiac_rehab": [
+    {
+      "date": "2026-09-21",
+      "weekday": "Monday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-09-23",
+      "weekday": "Wednesday",
+      "time": "09:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-09-24",
+      "weekday": "Thursday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-01",
+      "weekday": "Thursday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-02",
+      "weekday": "Friday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-05",
+      "weekday": "Monday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-06",
+      "weekday": "Tuesday",
+      "time": "09:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-07",
+      "weekday": "Wednesday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-09",
+      "weekday": "Friday",
+      "time": "09:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-12",
+      "weekday": "Monday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-14",
+      "weekday": "Wednesday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-20",
+      "weekday": "Tuesday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-21",
+      "weekday": "Wednesday",
+      "time": "10:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-22",
+      "weekday": "Thursday",
+      "time": "10:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-11-04",
+      "weekday": "Wednesday",
+      "time": "14:00",
+      "telehealth_available": true
+    }
+  ],
+  "pulmonary_rehab": [
+    {
+      "date": "2026-09-21",
+      "weekday": "Monday",
+      "time": "09:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-09-22",
+      "weekday": "Tuesday",
+      "time": "10:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-09-23",
+      "weekday": "Wednesday",
+      "time": "09:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-09-28",
+      "weekday": "Monday",
+      "time": "09:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-09-29",
+      "weekday": "Tuesday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-01",
+      "weekday": "Thursday",
+      "time": "09:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-02",
+      "weekday": "Friday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-05",
+      "weekday": "Monday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-07",
+      "weekday": "Wednesday",
+      "time": "10:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-08",
+      "weekday": "Thursday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-12",
+      "weekday": "Monday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-13",
+      "weekday": "Tuesday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-15",
+      "weekday": "Thursday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-20",
+      "weekday": "Tuesday",
+      "time": "10:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-21",
+      "weekday": "Wednesday",
+      "time": "11:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-22",
+      "weekday": "Thursday",
+      "time": "14:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-23",
+      "weekday": "Friday",
+      "time": "09:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-26",
+      "weekday": "Monday",
+      "time": "10:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-28",
+      "weekday": "Wednesday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-10-29",
+      "weekday": "Thursday",
+      "time": "15:00",
+      "telehealth_available": true
+    },
+    {
+      "date": "2026-11-04",
+      "weekday": "Wednesday",
+      "time": "10:00",
+      "telehealth_available": true
+    }
+  ]
+}

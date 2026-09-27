@@ -1,0 +1,130 @@
+{
+  "synthetic": true,
+  "synthetic_notice": "Fabricated record for BC-AAIE-HACK-12. Not a real person.",
+  "patient_id": "PT-1003",
+  "demographics": {
+    "name": "Rosa Lindqvist",
+    "dob": "1957-11-02",
+    "mrn": "MRN-40031045",
+    "phone": "+1-555-0199",
+    "address": "4 Quarry Street, Apt 2B, Eastbrook"
+  },
+  "age": 68,
+  "sex": "F",
+  "admission": {
+    "admit_date": "2026-09-11",
+    "discharge_date": "2026-09-19",
+    "admission_type": "emergent",
+    "length_of_stay_days": 8,
+    "unit": "Pulmonary"
+  },
+  "discharge_diagnoses": [
+    {
+      "code": "J44.1",
+      "description": "COPD with acute exacerbation",
+      "primary": true
+    },
+    {
+      "code": "I50.32",
+      "description": "Chronic diastolic heart failure",
+      "primary": false
+    }
+  ],
+  "comorbidities": [
+    {
+      "name": "Chronic pulmonary disease",
+      "charlson_points": 1
+    },
+    {
+      "name": "Congestive heart failure",
+      "charlson_points": 1
+    }
+  ],
+  "discharge_medication_orders": [
+    {
+      "drug": "Prednisone",
+      "dose": "40 mg",
+      "route": "PO",
+      "frequency": "once daily x 3 more days",
+      "status": "new",
+      "indication": "COPD exacerbation"
+    },
+    {
+      "drug": "Tiotropium",
+      "dose": "18 mcg",
+      "route": "inhaled",
+      "frequency": "once daily",
+      "status": "continue",
+      "indication": "COPD"
+    },
+    {
+      "drug": "Budesonide/formoterol",
+      "dose": "160/4.5 mcg",
+      "route": "inhaled",
+      "frequency": "2 puffs twice daily",
+      "status": "new",
+      "indication": "COPD"
+    },
+    {
+      "drug": "Albuterol",
+      "dose": "90 mcg",
+      "route": "inhaled",
+      "frequency": "2 puffs every 4 hours as needed",
+      "status": "continue",
+      "indication": "rescue"
+    },
+    {
+      "drug": "Furosemide",
+      "dose": "20 mg",
+      "route": "PO",
+      "frequency": "once daily",
+      "status": "continue",
+      "indication": "heart failure"
+    },
+    {
+      "drug": "Home oxygen",
+      "dose": "2 L/min",
+      "route": "nasal cannula",
+      "frequency": "with exertion and sleep",
+      "status": "new",
+      "indication": "hypoxemia"
+    }
+  ],
+  "vitals_at_discharge": {
+    "bp": "132/78",
+    "hr": 88,
+    "spo2": 91,
+    "weight_kg": 59.4,
+    "temp_c": 36.9
+  },
+  "labs": {
+    "pco2_mm_hg": 47,
+    "eosinophils_pct": 1.2
+  },
+  "utilization": {
+    "ed_visits_6mo": 3,
+    "admissions_12mo": 2
+  },
+  "social": {
+    "lives_alone": true,
+    "caregiver": null,
+    "has_transportation": false,
+    "language": "English"
+  },
+  "functional_status": "Short of breath after 20 m; uses cane",
+  "nursing_notes": "Inhaler technique needs reinforcement. Lives alone on 2nd floor, no elevator. Daughter lives 40 minutes away.",
+  "prior_admissions": [
+    {
+      "date": "2026-03-10",
+      "reason": "COPD exacerbation",
+      "los_days": 6,
+      "readmitted_within_30d": true
+    },
+    {
+      "date": "2026-04-05",
+      "reason": "COPD exacerbation (30-day readmission)",
+      "los_days": 7,
+      "readmitted_within_30d": false
+    }
+  ]
+}

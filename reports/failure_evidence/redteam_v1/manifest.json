@@ -1,0 +1,46 @@
+{
+  "created_at": "2026-09-26T11:14:47+00:00",
+  "generator": "scripts/snapshot_run.py",
+  "transform": "PT-#### / PT#### -> HMAC patient_ref",
+  "source_root": "state/redteam_live",
+  "files": [
+    {
+      "source": "redteam_results.json",
+      "snapshot": "reports/failure_evidence/redteam_v1/redteam_results.json",
+      "sha256_source": "0b00017c191bec21640e4de2d3ce6573a9c39b095f0bc568dd558ac561f514fb",
+      "sha256_snapshot": "0b00017c191bec21640e4de2d3ce6573a9c39b095f0bc568dd558ac561f514fb",
+      "patient_ids_pseudonymised": 0
+    },
+    {
+      "source": "tool_calls.jsonl",
+      "snapshot": "reports/failure_evidence/redteam_v1/tool_calls.jsonl",
+      "sha256_source": "9a1beb2deb00952ed5d01e10b52e16b0a954238fd438682dbf95ba5e8f6ffa23",
+      "sha256_snapshot": "9a1beb2deb00952ed5d01e10b52e16b0a954238fd438682dbf95ba5e8f6ffa23",
+      "patient_ids_pseudonymised": 0
+    },
+    {
+      "source": "agent_actions.jsonl",
+      "snapshot": "reports/failure_evidence/redteam_v1/agent_actions.jsonl",
+      "sha256_source": "d4e0b9e4c6478c6daa3fb10c8ad2f2c6ede2c4725f8ad931e43167a5f8509b8b",
+      "sha256_snapshot": "d4e0b9e4c6478c6daa3fb10c8ad2f2c6ede2c4725f8ad931e43167a5f8509b8b",
+      "patient_ids_pseudonymised": 0
+    },
+    {
+      "source": "mcp_transcript.jsonl",
+      "snapshot": "reports/failure_evidence/redteam_v1/mcp_transcript.jsonl",
+      "sha256_source": "618618d42601bd5b8495726f508db20a54b8adf71927cd9d791df1d286f0b846",
+      "sha256_snapshot": "618618d42601bd5b8495726f508db20a54b8adf71927cd9d791df1d286f0b846",
+      "patient_ids_pseudonymised": 0
+    },
+    {
+      "source": "state/spans_local.jsonl",
+      "snapshot": "reports/failure_evidence/redteam_v1/spans.jsonl",
+      "sha256_source": "20d0b6e661ce66fd8e1d872acb9394d2a79975c0f8ddf57b02cced9cb3068c13",
+      "sha256_snapshot": "1f95c91a439b0b31c24a6f494ba12672de81cbd9ed9e9b2a9ad25e89b74e01d9",
+      "filter": "spans whose trace id is referenced by the snapshot's other files",
+      "trace_ids_referenced": 20,
+      "spans_kept": 321,
+      "patient_ids_pseudonymised": 0
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "generated_at": "2026-09-27T10:40:53+00:00",
+  "generator": "scripts/reprice_run.py",
+  "note": "Frozen snapshots are read only, never modified. 'original' is the cost as first reported, with the placeholder prices of that time; 'current_prices' re-prices the same recorded token counts.",
+  "pricing_usd_per_mtok": {
+    "gemini-3.5-flash-lite": {
+      "input": 0.3,
+      "output": 2.5
+    },
+    "gemini-3.6-flash": {
+      "input": 0.75,
+      "output": 3.75
+    },
+    "gemini-3.1-flash-lite": {
+      "input": 0.25,
+      "output": 1.5
+    },
+    "gemini-2.5-flash": {
+      "input": 0.3,
+      "output": 2.5
+    },
+    "gemini-3.8-flash": {
+      "input": 0.75,
+      "output": 3.75
+    },
+    "openai/gpt-oss-120b": {
+      "input": 0.15,
+      "output": 0.6
+    },
+    "openai/gpt-oss-20b": {
+      "input": 0.075,
+      "output": 0.3
+    },
+    "gemini-2.5-flash-lite": {
+      "input": 0.1,
+      "output": 0.4
+    },
+    "gemini-2.5-pro": {
+      "input": 1.25,
+      "output": 10.0
+    },
+    "gemini-2.0-flash": {
+      "input": 0.1,
+      "output": 0.4
+    },
+    "offline-stub": {
+      "input": 0.0,
+      "output": 0.0
+    }
+  },
+  "pricing_source": "Official Gemini API pricing page (ai.google.dev/gemini-api/docs/pricing), Standard paid tier, checked 2026-09-26; free-tier usage is billed $0, so this is the production-cost estimate.",
+  "formula": "sum(prompt_tokens*input_price + completion_tokens*output_price)/1e6 over LLM spans (scripts/export_traces.normalise)",
+  "runs": {
+    "final_run_v1": {
+      "span_export": "reports/failure_evidence/final_run_v1/phoenix_spans.parquet",
+      "span_export_sha256": "399ebaf72279bbfd7526b1c659ae4352c3839fd9d69e66ca2491ce0455201e6b",
+      "turns": 26,
+      "llm_calls": 78,
+      "tokens": {
+        "input": 58494,
+        "output": 7298
+      },
+      "by_model": {
+        "gemini-3.5-flash-lite": {
+          "llm_calls": 78,
+          "input_tokens": 58494,
+          "output_tokens": 7298,
+          "cost_usd": 0.035793
+        }
+      },
+      "current_prices": {
+        "total_usd": 0.035793,
+        "mean_usd_per_turn": 0.001377
+      },
+      "original": {
+        "source": "reports/failure_evidence/final_run_v1/golden_signals.json",
+        "total_usd": 0.008769,
+        "mean_usd_per_turn": 0.000337,
+        "pricing_source": "assumed list prices - override with GEMINI_PRICE_* / GEMINI_FALLBACK_PRICE_* env vars to match your tier (flash-lite 0.10/0.40, flash 0.50/3.00 USD per 1M tokens)",
+        "pricing_usd_per_mtok": {
+          "gemini-3.5-flash-lite": {
+            "input": 0.1,
+            "output": 0.4
+          }
+        }
+      }
+    },
+    "baseline": {
+      "span_export": "reports/optimization/phoenix_spans_before.parquet",
+      "span_export_sha256": "f123675bf8edf11d78cf64fa042cbaadb32ff44c7f73afedf4c21564b3b628cd",
+      "turns": 1,
+      "llm_calls": 8,
+      "tokens": {
+        "input": 4069,
+        "output": 582
+      },
+      "by_model": {
+        "gemini-3.5-flash-lite": {
+          "llm_calls": 3,
+          "input_tokens": 3767,
+          "output_tokens": 370,
+          "cost_usd": 0.002055
+        },
+        "gemini-3.6-flash": {
+          "llm_calls": 5,
+          "input_tokens": 302,
+          "output_tokens": 212,
+          "cost_usd": 0.001022
+        }
+      },
+      "current_prices": {
+        "total_usd": 0.003077,
+        "mean_usd_per_turn": 0.003077
+      },
+      "original": {
+        "source": "reports/optimization/golden_signals_before.json",
+        "total_usd": 0.001312,
+        "mean_usd_per_turn": 0.001312,
+        "pricing_source": null,
+        "pricing_usd_per_mtok": {
+          "gemini-3.5-flash-lite": {
+            "input": 0.1,
+            "output": 0.4
+          },
+          "gemini-3.6-flash": {
+            "input": 0.5,
+            "output": 3.0
+          }
+        }
+      }
+    }
+  },
+  "like_for_like_turn": {
+    "message": "Please assemble the discharge plan for this patient.",
+    "baseline": {
+      "span_export": "reports/optimization/phoenix_spans_before.parquet",
+      "run_id": "run-c2a2a26912f4",
+      "trace_id": "754acea392f3e682da0860874626ed5c",
+      "root_span_id": "af93102b44d6bb52",
+      "end_to_end_s": 117.5,
+      "llm_calls": 8,
+      "llm_error_spans": 4,
+      "llm_models": [
+        "gemini-3.5-flash-lite",
+        "gemini-3.6-flash"
+      ],
+      "rate_limit_wait_inside_llm_spans": true,
+      "llm_span_total_s": 50.0,
+      "llm_span_p50_ms": 6205.3,
+      "rate_limit_wait_s": null,
+      "tokens": {
+        "input": 4069,
+        "output": 582
+      },
+      "cost_usd_current_prices": 0.003077
+    },
+    "final_run_v1": {
+      "span_export": "reports/failure_evidence/final_run_v1/phoenix_spans.parquet",
+      "run_id": "run-b97b81524fd6",
+      "trace_id": "a75d2ca2470bd9f93a737e0c9b1155cc",
+      "root_span_id": "3d00130c35a9011e",
+      "end_to_end_s": 34.1,
+      "llm_calls": 5,
+      "llm_error_spans": 0,
+      "llm_models": [
+        "gemini-3.5-flash-lite"
+      ],
+      "rate_limit_wait_inside_llm_spans": true,
+      "llm_span_total_s": 30.8,
+      "llm_span_p50_ms": 5744.8,
+      "rate_limit_wait_s": null,
+      "tokens": {
+        "input": 4581,
+        "output": 603
+      },
+      "cost_usd_current_prices": 0.002882
+    },
+    "current": {
+      "span_export": "traces/phoenix_spans.parquet",
+      "run_id": "run-fb5b4e0b7ea1",
+      "trace_id": "04c97d8b944de50f4ef10d8db14bd50a",
+      "root_span_id": "0b4ba8534f2dae39",
+      "end_to_end_s": 41.2,
+      "llm_calls": 5,
+      "llm_error_spans": 0,
+      "llm_models": [
+        "gemini-3.5-flash-lite"
+      ],
+      "rate_limit_wait_inside_llm_spans": false,
+      "llm_span_total_s": 7.6,
+      "llm_span_p50_ms": 1428.4,
+      "rate_limit_wait_s": 22.1,
+      "tokens": {
+        "input": 4746,
+        "output": 597
+      },
+      "cost_usd_current_prices": 0.002916
+    }
+  }
+}

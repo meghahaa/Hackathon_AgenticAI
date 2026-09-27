@@ -1,0 +1,71 @@
+{
+  "synthetic": true,
+  "synthetic_notice": "Fabricated record for BC-AAIE-HACK-12. Not a real person.",
+  "patient_id": "PT-1002",
+  "demographics": {
+    "name": "Daniel Okafor",
+    "dob": "1981-06-30",
+    "mrn": "MRN-40022318",
+    "phone": "+1-555-0177",
+    "address": "88 Harbor Lane, Westmere"
+  },
+  "age": 45,
+  "sex": "M",
+  "admission": {
+    "admit_date": "2026-09-17",
+    "discharge_date": "2026-09-20",
+    "admission_type": "emergent",
+    "length_of_stay_days": 3,
+    "unit": "General Medicine"
+  },
+  "discharge_diagnoses": [
+    {
+      "code": "J18.9",
+      "description": "Community-acquired pneumonia",
+      "primary": true
+    }
+  ],
+  "comorbidities": [],
+  "discharge_medication_orders": [
+    {
+      "drug": "Amoxicillin/clavulanate",
+      "dose": "875/125 mg",
+      "route": "PO",
+      "frequency": "twice daily x 5 more days",
+      "status": "new",
+      "indication": "pneumonia"
+    },
+    {
+      "drug": "Acetaminophen",
+      "dose": "650 mg",
+      "route": "PO",
+      "frequency": "every 6 hours as needed",
+      "status": "new",
+      "indication": "fever/pain"
+    }
+  ],
+  "vitals_at_discharge": {
+    "bp": "126/80",
+    "hr": 82,
+    "spo2": 95,
+    "weight_kg": 81.0,
+    "temp_c": 37.1
+  },
+  "labs": {
+    "wbc_k_ul": 9.8,
+    "crp_mg_l": 22
+  },
+  "utilization": {
+    "ed_visits_6mo": 0,
+    "admissions_12mo": 0
+  },
+  "social": {
+    "lives_alone": false,
+    "caregiver": "partner",
+    "has_transportation": true,
+    "language": "English"
+  },
+  "functional_status": "Independent",
+  "nursing_notes": "Ambulating independently on room air. Understands antibiotic course.",
+  "prior_admissions": []
+}

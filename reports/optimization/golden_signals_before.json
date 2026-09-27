@@ -1,0 +1,203 @@
+{
+  "generated_at": "2026-09-25T14:02:16+00:00",
+  "generator": "scripts/export_traces.py",
+  "span_source": "phoenix.client.Client().spans.get_spans_dataframe",
+  "trace_export": "traces/phoenix_spans.parquet",
+  "window": {
+    "first_span": "2026-09-25 13:57:58.359462+00:00",
+    "last_span": "2026-09-25 13:59:55.845604+00:00"
+  },
+  "traffic": {
+    "spans": 49,
+    "traces": 1,
+    "turns": 1,
+    "llm_calls": 8,
+    "tool_calls": 13,
+    "sessions": 1
+  },
+  "latency": {
+    "thinking": {
+      "count": 8,
+      "p50_ms": 6205.3,
+      "p95_ms": 11568.9,
+      "max_ms": 13131.8
+    },
+    "acting": {
+      "count": 10,
+      "p50_ms": 4775.4,
+      "p95_ms": 45396.4,
+      "max_ms": 71511.2
+    },
+    "tool": {
+      "count": 13,
+      "p50_ms": 13.7,
+      "p95_ms": 6887.2,
+      "max_ms": 17183.2
+    },
+    "end_to_end": {
+      "count": 1,
+      "p50_ms": 117486.1,
+      "p95_ms": 117486.1,
+      "max_ms": 117486.1
+    },
+    "by_node": [
+      {
+        "name": "find_followup_slots",
+        "count": 4,
+        "p50_ms": 13.7,
+        "p95_ms": 14.7
+      },
+      {
+        "name": "get_patient_record",
+        "count": 1,
+        "p50_ms": 23.1,
+        "p95_ms": 23.1
+      },
+      {
+        "name": "get_prior_admissions",
+        "count": 2,
+        "p50_ms": 4.8,
+        "p95_ms": 9.1
+      },
+      {
+        "name": "human_approval_gate",
+        "count": 1,
+        "p50_ms": 11.4,
+        "p95_ms": 11.4
+      },
+      {
+        "name": "input_guard",
+        "count": 1,
+        "p50_ms": 137.5,
+        "p95_ms": 137.5
+      },
+      {
+        "name": "output_guard",
+        "count": 1,
+        "p50_ms": 13478.3,
+        "p95_ms": 13478.3
+      },
+      {
+        "name": "plan_assembly_agent",
+        "count": 1,
+        "p50_ms": 9413.4,
+        "p95_ms": 9413.4
+      },
+      {
+        "name": "policy_retrieval_agent",
+        "count": 1,
+        "p50_ms": 71511.2,
+        "p95_ms": 71511.2
+      },
+      {
+        "name": "readmission_risk_agent",
+        "count": 1,
+        "p50_ms": 11842.6,
+        "p95_ms": 11842.6
+      },
+      {
+        "name": "search_followup_policy",
+        "count": 6,
+        "p50_ms": 14.0,
+        "p95_ms": 12891.7
+      },
+      {
+        "name": "supervisor",
+        "count": 4,
+        "p50_ms": 41.7,
+        "p95_ms": 9066.5
+      }
+    ]
+  },
+  "tokens": {
+    "input": 4069,
+    "output": 582,
+    "total": 4651,
+    "mean_input_per_llm_call": 508.6,
+    "models": [
+      "gemini-3.5-flash-lite",
+      "gemini-3.6-flash"
+    ]
+  },
+  "cost": {
+    "pricing_usd_per_mtok": {
+      "gemini-3.6-flash": {
+        "input": 0.5,
+        "output": 3.0
+      },
+      "gemini-3.5-flash-lite": {
+        "input": 0.1,
+        "output": 0.4
+      },
+      "gemini-2.5-flash": {
+        "input": 0.3,
+        "output": 2.5
+      },
+      "gemini-2.5-flash-lite": {
+        "input": 0.1,
+        "output": 0.4
+      },
+      "gemini-2.5-pro": {
+        "input": 1.25,
+        "output": 10.0
+      },
+      "gemini-2.0-flash": {
+        "input": 0.1,
+        "output": 0.4
+      },
+      "offline-stub": {
+        "input": 0.0,
+        "output": 0.0
+      }
+    },
+    "total_usd": 0.001312,
+    "mean_usd_per_turn": 0.001312,
+    "max_llm_calls_per_turn": 8,
+    "formula": "sum(prompt_tokens*input_price + completion_tokens*output_price)/1e6 over LLM spans"
+  },
+  "errors": {
+    "span_errors": 8,
+    "span_error_rate": 0.1633,
+    "tool_calls_logged": 13,
+    "tool_non_ok": 0,
+    "tool_error_rate": 0.0,
+    "tool_status_counts": {
+      "ok": 13
+    }
+  },
+  "quality": {
+    "source": "reports/eval_report.json",
+    "accuracy": null,
+    "hallucination_rate": null,
+    "mean_faithfulness": null,
+    "mean_answer_relevancy": null
+  },
+  "budgets": {
+    "p95_end_to_end_latency_ms": {
+      "budget": 90000,
+      "actual": 117486.1,
+      "within_budget": false
+    },
+    "mean_cost_usd_per_turn": {
+      "budget": 0.01,
+      "actual": 0.001312,
+      "within_budget": true
+    },
+    "max_llm_calls_per_turn": {
+      "budget": 8,
+      "actual": 8,
+      "within_budget": true
+    },
+    "tool_error_rate": {
+      "budget": 0.25,
+      "actual": 0.0,
+      "within_budget": true
+    }
+  },
+  "dashboard": {
+    "png": "reports/dashboard.png",
+    "kind": "phoenix-ui-screenshot (headless browser)",
+    "chart": "reports/dashboard_chart.png",
+    "data": "reports/dashboard_data.csv"
+  }
+}

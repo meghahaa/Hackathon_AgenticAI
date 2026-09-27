@@ -1,0 +1,49 @@
+{
+  "created_at": "2026-09-25T14:34:52+00:00",
+  "generator": "scripts/snapshot_run.py",
+  "transform": "PT-#### / PT#### -> HMAC patient_ref",
+  "files": [
+    {
+      "source": "traces/phoenix_spans.parquet",
+      "snapshot": "reports/failure_evidence/validation_run/phoenix_spans.parquet",
+      "sha256_source": "f62140b5bd6162ecf123848bcaf2ba4183234c9891f339fb85616e67c969a005",
+      "sha256_snapshot": "a16e291a9d3a600bd3bac00cd3c3c12cb970640d4316964a844af1fd9647c5be",
+      "patient_ids_pseudonymised": 1228
+    },
+    {
+      "source": "reports/cli_run_results.json",
+      "snapshot": "reports/failure_evidence/validation_run/cli_run_results.json",
+      "sha256_source": "051c7956dce466068696576b2afa85a2e82f6073db1346a2695604a6d31d26fe",
+      "sha256_snapshot": "d02418edc1613637ed08ea19e128d9118a516fd082b40703a21a83e35e4026fe",
+      "patient_ids_pseudonymised": 13
+    },
+    {
+      "source": "reports/eval_report.json",
+      "snapshot": "reports/failure_evidence/validation_run/eval_report.json",
+      "sha256_source": "b2783aaba58ebef099d3a755c9092b39bf4b27f2f0fd725746a52d02e7bfb106",
+      "sha256_snapshot": "b2783aaba58ebef099d3a755c9092b39bf4b27f2f0fd725746a52d02e7bfb106",
+      "patient_ids_pseudonymised": 0
+    },
+    {
+      "source": "reports/golden_signals.json",
+      "snapshot": "reports/failure_evidence/validation_run/golden_signals.json",
+      "sha256_source": "11d93e59fac809e80161217cb1b0ba225f350c62160ecdca8dc5562859fa89ac",
+      "sha256_snapshot": "11d93e59fac809e80161217cb1b0ba225f350c62160ecdca8dc5562859fa89ac",
+      "patient_ids_pseudonymised": 0
+    },
+    {
+      "source": "logs/tool_calls.jsonl",
+      "snapshot": "reports/failure_evidence/validation_run/tool_calls.jsonl",
+      "sha256_source": "7577ed58e390a7aa8afccd5e2a0eb83cabd67dfb0be6a07825c74ea20da3156b",
+      "sha256_snapshot": "9e8ca5ac561ad3cfb3f4207499f202abc3da6e0cbf653b76ace012aa83d54913",
+      "patient_ids_pseudonymised": 76
+    },
+    {
+      "source": "logs/agent_actions.jsonl",
+      "snapshot": "reports/failure_evidence/validation_run/agent_actions.jsonl",
+      "sha256_source": "54f8f9148d69cb2e0953742d4d6e8ab4101356d9f5eb995c6492fe2182af9243",
+      "sha256_snapshot": "615c0b88981cbc391b9c269d14cd3bf9bce0d6b2682c400c0ace6f95f4279389",
+      "patient_ids_pseudonymised": 114
+    }
+  ]
+}
